@@ -1,0 +1,15 @@
+{
+  "action_rows": 120000,
+  "all_checkpoint_truth_covered": true,
+  "all_numeric_verified": true,
+  "checkpoint_rows": 1200,
+  "maximum_probability_sum_error": 0.0,
+  "maximum_srs_record_probability_error": 1.6653345369377348e-16,
+  "records": 33403,
+  "shared_within_stratum_prefixes": 46728,
+  "status": "pass",
+  "strata": 300,
+  "target_entropy_width": 0.10008345855698263,
+  "tasks": 40,
+  "within_stratum_record_conflicts": 0
+}

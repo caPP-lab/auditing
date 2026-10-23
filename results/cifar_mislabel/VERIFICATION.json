@@ -1,0 +1,16 @@
+{
+  "action_rows": 200000,
+  "all_intervals_nested": true,
+  "audit_strata": 40,
+  "checkpoint_rows": 8000,
+  "maximum_probability_sum_error": 4.440892098500626e-16,
+  "maximum_srs_record_probability_error": 1.1102230246251565e-16,
+  "paths_ever_missing_truth_at_checkpoint": 2,
+  "records": 50000,
+  "selected_variant": "floor10_stable",
+  "serfling_reviews_at_two_points": 4332,
+  "shared_within_stratum_prefixes": 72381,
+  "status": "pass",
+  "tasks": 40,
+  "within_stratum_record_conflicts": 0
+}

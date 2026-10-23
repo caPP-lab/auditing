@@ -1,0 +1,11 @@
+dataset,method,selection,guarantee,paths,reached,mean_reviews,median_reviews,q10_reviews,q90_reviews
+kenya,PAS,priority-aware,"finite-sample, anytime",20,20,640.6,655.5,546.1,733.1
+kenya,SRS,random records,"finite-sample, anytime",20,20,876.25,863.5,760.5,987.1
+kenya,Ramdas PPR,random records,"finite-sample, anytime",20,20,3653.25,4118.0,2748.8,4301.1
+kenya,Wald,random records,"asymptotic, fixed-n; oracle variance",1,1,1481.0,1481.0,1481.0,1481.0
+kenya,Serfling,random records,"finite-sample, fixed-n",1,1,4154.0,4154.0,4154.0,4154.0
+cifar10n,PAS,priority-aware,"finite-sample, anytime",20,20,781.6,768.0,633.8,880.8000000000001
+cifar10n,SRS,random records,"finite-sample, anytime",20,20,870.35,862.0,772.0,986.6
+cifar10n,Ramdas PPR,random records,"finite-sample, anytime",20,20,3979.65,3972.5,3578.3,4327.2
+cifar10n,Wald,random records,"asymptotic, fixed-n; oracle variance",1,1,1434.0,1434.0,1434.0,1434.0
+cifar10n,Serfling,random records,"finite-sample, fixed-n",1,1,4332.0,4332.0,4332.0,4332.0

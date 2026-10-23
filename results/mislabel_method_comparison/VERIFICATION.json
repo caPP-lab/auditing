@@ -1,0 +1,28 @@
+{
+  "alpha": 0.045,
+  "confidence": 0.955,
+  "datasets": [
+    {
+      "dataset": "kenya",
+      "population_size": 33403,
+      "ppr_always_covered_paths": 19,
+      "ppr_empty_paths": 1,
+      "ppr_target_reached_paths": 20,
+      "srs_paths": 20,
+      "truth": 0.1796844594796874
+    },
+    {
+      "dataset": "cifar10n",
+      "population_size": 50000,
+      "ppr_always_covered_paths": 20,
+      "ppr_empty_paths": 0,
+      "ppr_target_reached_paths": 20,
+      "srs_paths": 20,
+      "truth": 0.17234
+    }
+  ],
+  "ppr": "uniform BetaBinomial(N,1,1) prior-posterior-ratio confidence sequence with running intersection",
+  "status": "pass",
+  "target_half_width": 0.02,
+  "wald": "oracle finite-population truth variance; asymptotic fixed-n; no finite-population correction"
+}

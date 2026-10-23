@@ -1,0 +1,1485 @@
+{
+  "classes": [
+    {
+      "ambiguity_note": "The released flat class name is broader than some images; the frozen first concrete noun sense is used without consulting the confusion matrix.",
+      "class_id": 0,
+      "gloss": "an aircraft that has a fixed wing and is powered by propellers or jets; \"the flight was delayed due to trouble with the airplane\"  ",
+      "hypernym_paths": [
+        [
+          {
+            "lemmas": [
+              "airplane",
+              "aeroplane",
+              "plane"
+            ],
+            "synset_id": "02691156-n"
+          },
+          {
+            "lemmas": [
+              "heavier-than-air craft"
+            ],
+            "synset_id": "03510583-n"
+          },
+          {
+            "lemmas": [
+              "aircraft"
+            ],
+            "synset_id": "02686568-n"
+          },
+          {
+            "lemmas": [
+              "craft"
+            ],
+            "synset_id": "03125870-n"
+          },
+          {
+            "lemmas": [
+              "vehicle"
+            ],
+            "synset_id": "04524313-n"
+          },
+          {
+            "lemmas": [
+              "conveyance",
+              "transport"
+            ],
+            "synset_id": "03100490-n"
+          },
+          {
+            "lemmas": [
+              "instrumentality",
+              "instrumentation"
+            ],
+            "synset_id": "03575240-n"
+          },
+          {
+            "lemmas": [
+              "artifact",
+              "artefact"
+            ],
+            "synset_id": "00021939-n"
+          },
+          {
+            "lemmas": [
+              "whole",
+              "unit"
+            ],
+            "synset_id": "00003553-n"
+          },
+          {
+            "lemmas": [
+              "object",
+              "physical object"
+            ],
+            "synset_id": "00002684-n"
+          },
+          {
+            "lemmas": [
+              "physical entity"
+            ],
+            "synset_id": "00001930-n"
+          },
+          {
+            "lemmas": [
+              "entity"
+            ],
+            "synset_id": "00001740-n"
+          }
+        ]
+      ],
+      "lemmas": [
+        "airplane",
+        "aeroplane",
+        "plane"
+      ],
+      "released_label": "airplane",
+      "sense_key": "airplane%1:06:00::",
+      "sense_selection_rationale": "fixed-wing powered aircraft",
+      "synset_id": "02691156-n",
+      "wordnet_version": "Princeton WordNet 3.0"
+    },
+    {
+      "ambiguity_note": "The released flat class name is broader than some images; the frozen first concrete noun sense is used without consulting the confusion matrix.",
+      "class_id": 1,
+      "gloss": "a motor vehicle with four wheels; usually propelled by an internal combustion engine; \"he needs a car to get to work\"  ",
+      "hypernym_paths": [
+        [
+          {
+            "lemmas": [
+              "car",
+              "auto",
+              "automobile",
+              "machine",
+              "motorcar"
+            ],
+            "synset_id": "02958343-n"
+          },
+          {
+            "lemmas": [
+              "motor vehicle",
+              "automotive vehicle"
+            ],
+            "synset_id": "03791235-n"
+          },
+          {
+            "lemmas": [
+              "self-propelled vehicle"
+            ],
+            "synset_id": "04170037-n"
+          },
+          {
+            "lemmas": [
+              "wheeled vehicle"
+            ],
+            "synset_id": "04576211-n"
+          },
+          {
+            "lemmas": [
+              "container"
+            ],
+            "synset_id": "03094503-n"
+          },
+          {
+            "lemmas": [
+              "instrumentality",
+              "instrumentation"
+            ],
+            "synset_id": "03575240-n"
+          },
+          {
+            "lemmas": [
+              "artifact",
+              "artefact"
+            ],
+            "synset_id": "00021939-n"
+          },
+          {
+            "lemmas": [
+              "whole",
+              "unit"
+            ],
+            "synset_id": "00003553-n"
+          },
+          {
+            "lemmas": [
+              "object",
+              "physical object"
+            ],
+            "synset_id": "00002684-n"
+          },
+          {
+            "lemmas": [
+              "physical entity"
+            ],
+            "synset_id": "00001930-n"
+          },
+          {
+            "lemmas": [
+              "entity"
+            ],
+            "synset_id": "00001740-n"
+          }
+        ],
+        [
+          {
+            "lemmas": [
+              "car",
+              "auto",
+              "automobile",
+              "machine",
+              "motorcar"
+            ],
+            "synset_id": "02958343-n"
+          },
+          {
+            "lemmas": [
+              "motor vehicle",
+              "automotive vehicle"
+            ],
+            "synset_id": "03791235-n"
+          },
+          {
+            "lemmas": [
+              "self-propelled vehicle"
+            ],
+            "synset_id": "04170037-n"
+          },
+          {
+            "lemmas": [
+              "wheeled vehicle"
+            ],
+            "synset_id": "04576211-n"
+          },
+          {
+            "lemmas": [
+              "vehicle"
+            ],
+            "synset_id": "04524313-n"
+          },
+          {
+            "lemmas": [
+              "conveyance",
+              "transport"
+            ],
+            "synset_id": "03100490-n"
+          },
+          {
+            "lemmas": [
+              "instrumentality",
+              "instrumentation"
+            ],
+            "synset_id": "03575240-n"
+          },
+          {
+            "lemmas": [
+              "artifact",
+              "artefact"
+            ],
+            "synset_id": "00021939-n"
+          },
+          {
+            "lemmas": [
+              "whole",
+              "unit"
+            ],
+            "synset_id": "00003553-n"
+          },
+          {
+            "lemmas": [
+              "object",
+              "physical object"
+            ],
+            "synset_id": "00002684-n"
+          },
+          {
+            "lemmas": [
+              "physical entity"
+            ],
+            "synset_id": "00001930-n"
+          },
+          {
+            "lemmas": [
+              "entity"
+            ],
+            "synset_id": "00001740-n"
+          }
+        ]
+      ],
+      "lemmas": [
+        "car",
+        "auto",
+        "automobile",
+        "machine",
+        "motorcar"
+      ],
+      "released_label": "automobile",
+      "sense_key": "automobile%1:06:00::",
+      "sense_selection_rationale": "four-wheel motor vehicle",
+      "synset_id": "02958343-n",
+      "wordnet_version": "Princeton WordNet 3.0"
+    },
+    {
+      "ambiguity_note": "The released flat class name is broader than some images; the frozen first concrete noun sense is used without consulting the confusion matrix.",
+      "class_id": 2,
+      "gloss": "warm-blooded egg-laying vertebrates characterized by feathers and forelimbs modified as wings  ",
+      "hypernym_paths": [
+        [
+          {
+            "lemmas": [
+              "bird"
+            ],
+            "synset_id": "01503061-n"
+          },
+          {
+            "lemmas": [
+              "vertebrate",
+              "craniate"
+            ],
+            "synset_id": "01471682-n"
+          },
+          {
+            "lemmas": [
+              "chordate"
+            ],
+            "synset_id": "01466257-n"
+          },
+          {
+            "lemmas": [
+              "animal",
+              "animate being",
+              "beast",
+              "brute",
+              "creature",
+              "fauna"
+            ],
+            "synset_id": "00015388-n"
+          },
+          {
+            "lemmas": [
+              "organism",
+              "being"
+            ],
+            "synset_id": "00004475-n"
+          },
+          {
+            "lemmas": [
+              "living thing",
+              "animate thing"
+            ],
+            "synset_id": "00004258-n"
+          },
+          {
+            "lemmas": [
+              "whole",
+              "unit"
+            ],
+            "synset_id": "00003553-n"
+          },
+          {
+            "lemmas": [
+              "object",
+              "physical object"
+            ],
+            "synset_id": "00002684-n"
+          },
+          {
+            "lemmas": [
+              "physical entity"
+            ],
+            "synset_id": "00001930-n"
+          },
+          {
+            "lemmas": [
+              "entity"
+            ],
+            "synset_id": "00001740-n"
+          }
+        ]
+      ],
+      "lemmas": [
+        "bird"
+      ],
+      "released_label": "bird",
+      "sense_key": "bird%1:05:00::",
+      "sense_selection_rationale": "feathered egg-laying vertebrate",
+      "synset_id": "01503061-n",
+      "wordnet_version": "Princeton WordNet 3.0"
+    },
+    {
+      "ambiguity_note": "The released flat class name is broader than some images; the frozen first concrete noun sense is used without consulting the confusion matrix.",
+      "class_id": 3,
+      "gloss": "feline mammal usually having thick soft fur and no ability to roar: domestic cats; wildcats  ",
+      "hypernym_paths": [
+        [
+          {
+            "lemmas": [
+              "cat",
+              "true cat"
+            ],
+            "synset_id": "02121620-n"
+          },
+          {
+            "lemmas": [
+              "feline",
+              "felid"
+            ],
+            "synset_id": "02120997-n"
+          },
+          {
+            "lemmas": [
+              "carnivore"
+            ],
+            "synset_id": "02075296-n"
+          },
+          {
+            "lemmas": [
+              "placental",
+              "placental mammal",
+              "eutherian",
+              "eutherian mammal"
+            ],
+            "synset_id": "01886756-n"
+          },
+          {
+            "lemmas": [
+              "mammal",
+              "mammalian"
+            ],
+            "synset_id": "01861778-n"
+          },
+          {
+            "lemmas": [
+              "vertebrate",
+              "craniate"
+            ],
+            "synset_id": "01471682-n"
+          },
+          {
+            "lemmas": [
+              "chordate"
+            ],
+            "synset_id": "01466257-n"
+          },
+          {
+            "lemmas": [
+              "animal",
+              "animate being",
+              "beast",
+              "brute",
+              "creature",
+              "fauna"
+            ],
+            "synset_id": "00015388-n"
+          },
+          {
+            "lemmas": [
+              "organism",
+              "being"
+            ],
+            "synset_id": "00004475-n"
+          },
+          {
+            "lemmas": [
+              "living thing",
+              "animate thing"
+            ],
+            "synset_id": "00004258-n"
+          },
+          {
+            "lemmas": [
+              "whole",
+              "unit"
+            ],
+            "synset_id": "00003553-n"
+          },
+          {
+            "lemmas": [
+              "object",
+              "physical object"
+            ],
+            "synset_id": "00002684-n"
+          },
+          {
+            "lemmas": [
+              "physical entity"
+            ],
+            "synset_id": "00001930-n"
+          },
+          {
+            "lemmas": [
+              "entity"
+            ],
+            "synset_id": "00001740-n"
+          }
+        ]
+      ],
+      "lemmas": [
+        "cat",
+        "true cat"
+      ],
+      "released_label": "cat",
+      "sense_key": "cat%1:05:00::",
+      "sense_selection_rationale": "feline mammal, including domestic cats",
+      "synset_id": "02121620-n",
+      "wordnet_version": "Princeton WordNet 3.0"
+    },
+    {
+      "ambiguity_note": "The released flat class name is broader than some images; the frozen first concrete noun sense is used without consulting the confusion matrix.",
+      "class_id": 4,
+      "gloss": "distinguished from Bovidae by the male's having solid deciduous antlers  ",
+      "hypernym_paths": [
+        [
+          {
+            "lemmas": [
+              "deer",
+              "cervid"
+            ],
+            "synset_id": "02430045-n"
+          },
+          {
+            "lemmas": [
+              "ruminant"
+            ],
+            "synset_id": "02399000-n"
+          },
+          {
+            "lemmas": [
+              "even-toed ungulate",
+              "artiodactyl",
+              "artiodactyl mammal"
+            ],
+            "synset_id": "02394477-n"
+          },
+          {
+            "lemmas": [
+              "ungulate",
+              "hoofed mammal"
+            ],
+            "synset_id": "02370806-n"
+          },
+          {
+            "lemmas": [
+              "placental",
+              "placental mammal",
+              "eutherian",
+              "eutherian mammal"
+            ],
+            "synset_id": "01886756-n"
+          },
+          {
+            "lemmas": [
+              "mammal",
+              "mammalian"
+            ],
+            "synset_id": "01861778-n"
+          },
+          {
+            "lemmas": [
+              "vertebrate",
+              "craniate"
+            ],
+            "synset_id": "01471682-n"
+          },
+          {
+            "lemmas": [
+              "chordate"
+            ],
+            "synset_id": "01466257-n"
+          },
+          {
+            "lemmas": [
+              "animal",
+              "animate being",
+              "beast",
+              "brute",
+              "creature",
+              "fauna"
+            ],
+            "synset_id": "00015388-n"
+          },
+          {
+            "lemmas": [
+              "organism",
+              "being"
+            ],
+            "synset_id": "00004475-n"
+          },
+          {
+            "lemmas": [
+              "living thing",
+              "animate thing"
+            ],
+            "synset_id": "00004258-n"
+          },
+          {
+            "lemmas": [
+              "whole",
+              "unit"
+            ],
+            "synset_id": "00003553-n"
+          },
+          {
+            "lemmas": [
+              "object",
+              "physical object"
+            ],
+            "synset_id": "00002684-n"
+          },
+          {
+            "lemmas": [
+              "physical entity"
+            ],
+            "synset_id": "00001930-n"
+          },
+          {
+            "lemmas": [
+              "entity"
+            ],
+            "synset_id": "00001740-n"
+          }
+        ]
+      ],
+      "lemmas": [
+        "deer",
+        "cervid"
+      ],
+      "released_label": "deer",
+      "sense_key": "deer%1:05:00::",
+      "sense_selection_rationale": "cervid mammal",
+      "synset_id": "02430045-n",
+      "wordnet_version": "Princeton WordNet 3.0"
+    },
+    {
+      "ambiguity_note": "The released flat class name is broader than some images; the frozen first concrete noun sense is used without consulting the confusion matrix.",
+      "class_id": 5,
+      "gloss": "a member of the genus Canis (probably descended from the common wolf) that has been domesticated by man since prehistoric times; occurs in many breeds; \"the dog barked all night\"  ",
+      "hypernym_paths": [
+        [
+          {
+            "lemmas": [
+              "dog",
+              "domestic dog",
+              "Canis familiaris"
+            ],
+            "synset_id": "02084071-n"
+          },
+          {
+            "lemmas": [
+              "domestic animal",
+              "domesticated animal"
+            ],
+            "synset_id": "01317541-n"
+          },
+          {
+            "lemmas": [
+              "animal",
+              "animate being",
+              "beast",
+              "brute",
+              "creature",
+              "fauna"
+            ],
+            "synset_id": "00015388-n"
+          },
+          {
+            "lemmas": [
+              "organism",
+              "being"
+            ],
+            "synset_id": "00004475-n"
+          },
+          {
+            "lemmas": [
+              "living thing",
+              "animate thing"
+            ],
+            "synset_id": "00004258-n"
+          },
+          {
+            "lemmas": [
+              "whole",
+              "unit"
+            ],
+            "synset_id": "00003553-n"
+          },
+          {
+            "lemmas": [
+              "object",
+              "physical object"
+            ],
+            "synset_id": "00002684-n"
+          },
+          {
+            "lemmas": [
+              "physical entity"
+            ],
+            "synset_id": "00001930-n"
+          },
+          {
+            "lemmas": [
+              "entity"
+            ],
+            "synset_id": "00001740-n"
+          }
+        ],
+        [
+          {
+            "lemmas": [
+              "dog",
+              "domestic dog",
+              "Canis familiaris"
+            ],
+            "synset_id": "02084071-n"
+          },
+          {
+            "lemmas": [
+              "canine",
+              "canid"
+            ],
+            "synset_id": "02083346-n"
+          },
+          {
+            "lemmas": [
+              "carnivore"
+            ],
+            "synset_id": "02075296-n"
+          },
+          {
+            "lemmas": [
+              "placental",
+              "placental mammal",
+              "eutherian",
+              "eutherian mammal"
+            ],
+            "synset_id": "01886756-n"
+          },
+          {
+            "lemmas": [
+              "mammal",
+              "mammalian"
+            ],
+            "synset_id": "01861778-n"
+          },
+          {
+            "lemmas": [
+              "vertebrate",
+              "craniate"
+            ],
+            "synset_id": "01471682-n"
+          },
+          {
+            "lemmas": [
+              "chordate"
+            ],
+            "synset_id": "01466257-n"
+          },
+          {
+            "lemmas": [
+              "animal",
+              "animate being",
+              "beast",
+              "brute",
+              "creature",
+              "fauna"
+            ],
+            "synset_id": "00015388-n"
+          },
+          {
+            "lemmas": [
+              "organism",
+              "being"
+            ],
+            "synset_id": "00004475-n"
+          },
+          {
+            "lemmas": [
+              "living thing",
+              "animate thing"
+            ],
+            "synset_id": "00004258-n"
+          },
+          {
+            "lemmas": [
+              "whole",
+              "unit"
+            ],
+            "synset_id": "00003553-n"
+          },
+          {
+            "lemmas": [
+              "object",
+              "physical object"
+            ],
+            "synset_id": "00002684-n"
+          },
+          {
+            "lemmas": [
+              "physical entity"
+            ],
+            "synset_id": "00001930-n"
+          },
+          {
+            "lemmas": [
+              "entity"
+            ],
+            "synset_id": "00001740-n"
+          }
+        ]
+      ],
+      "lemmas": [
+        "dog",
+        "domestic dog",
+        "Canis familiaris"
+      ],
+      "released_label": "dog",
+      "sense_key": "dog%1:05:00::",
+      "sense_selection_rationale": "domesticated member of genus Canis",
+      "synset_id": "02084071-n",
+      "wordnet_version": "Princeton WordNet 3.0"
+    },
+    {
+      "ambiguity_note": "The released flat class name is broader than some images; the frozen first concrete noun sense is used without consulting the confusion matrix.",
+      "class_id": 6,
+      "gloss": "any of various tailless stout-bodied amphibians with long hind limbs for leaping; semiaquatic and terrestrial species  ",
+      "hypernym_paths": [
+        [
+          {
+            "lemmas": [
+              "frog",
+              "toad",
+              "toad frog",
+              "anuran",
+              "batrachian",
+              "salientian"
+            ],
+            "synset_id": "01639765-n"
+          },
+          {
+            "lemmas": [
+              "amphibian"
+            ],
+            "synset_id": "01627424-n"
+          },
+          {
+            "lemmas": [
+              "vertebrate",
+              "craniate"
+            ],
+            "synset_id": "01471682-n"
+          },
+          {
+            "lemmas": [
+              "chordate"
+            ],
+            "synset_id": "01466257-n"
+          },
+          {
+            "lemmas": [
+              "animal",
+              "animate being",
+              "beast",
+              "brute",
+              "creature",
+              "fauna"
+            ],
+            "synset_id": "00015388-n"
+          },
+          {
+            "lemmas": [
+              "organism",
+              "being"
+            ],
+            "synset_id": "00004475-n"
+          },
+          {
+            "lemmas": [
+              "living thing",
+              "animate thing"
+            ],
+            "synset_id": "00004258-n"
+          },
+          {
+            "lemmas": [
+              "whole",
+              "unit"
+            ],
+            "synset_id": "00003553-n"
+          },
+          {
+            "lemmas": [
+              "object",
+              "physical object"
+            ],
+            "synset_id": "00002684-n"
+          },
+          {
+            "lemmas": [
+              "physical entity"
+            ],
+            "synset_id": "00001930-n"
+          },
+          {
+            "lemmas": [
+              "entity"
+            ],
+            "synset_id": "00001740-n"
+          }
+        ]
+      ],
+      "lemmas": [
+        "frog",
+        "toad",
+        "toad frog",
+        "anuran",
+        "batrachian",
+        "salientian"
+      ],
+      "released_label": "frog",
+      "sense_key": "frog%1:05:00::",
+      "sense_selection_rationale": "tailless amphibian",
+      "synset_id": "01639765-n",
+      "wordnet_version": "Princeton WordNet 3.0"
+    },
+    {
+      "ambiguity_note": "The released flat class name is broader than some images; the frozen first concrete noun sense is used without consulting the confusion matrix.",
+      "class_id": 7,
+      "gloss": "solid-hoofed herbivorous quadruped domesticated since prehistoric times  ",
+      "hypernym_paths": [
+        [
+          {
+            "lemmas": [
+              "horse",
+              "Equus caballus"
+            ],
+            "synset_id": "02374451-n"
+          },
+          {
+            "lemmas": [
+              "equine",
+              "equid"
+            ],
+            "synset_id": "02374149-n"
+          },
+          {
+            "lemmas": [
+              "odd-toed ungulate",
+              "perissodactyl",
+              "perissodactyl mammal"
+            ],
+            "synset_id": "02373336-n"
+          },
+          {
+            "lemmas": [
+              "ungulate",
+              "hoofed mammal"
+            ],
+            "synset_id": "02370806-n"
+          },
+          {
+            "lemmas": [
+              "placental",
+              "placental mammal",
+              "eutherian",
+              "eutherian mammal"
+            ],
+            "synset_id": "01886756-n"
+          },
+          {
+            "lemmas": [
+              "mammal",
+              "mammalian"
+            ],
+            "synset_id": "01861778-n"
+          },
+          {
+            "lemmas": [
+              "vertebrate",
+              "craniate"
+            ],
+            "synset_id": "01471682-n"
+          },
+          {
+            "lemmas": [
+              "chordate"
+            ],
+            "synset_id": "01466257-n"
+          },
+          {
+            "lemmas": [
+              "animal",
+              "animate being",
+              "beast",
+              "brute",
+              "creature",
+              "fauna"
+            ],
+            "synset_id": "00015388-n"
+          },
+          {
+            "lemmas": [
+              "organism",
+              "being"
+            ],
+            "synset_id": "00004475-n"
+          },
+          {
+            "lemmas": [
+              "living thing",
+              "animate thing"
+            ],
+            "synset_id": "00004258-n"
+          },
+          {
+            "lemmas": [
+              "whole",
+              "unit"
+            ],
+            "synset_id": "00003553-n"
+          },
+          {
+            "lemmas": [
+              "object",
+              "physical object"
+            ],
+            "synset_id": "00002684-n"
+          },
+          {
+            "lemmas": [
+              "physical entity"
+            ],
+            "synset_id": "00001930-n"
+          },
+          {
+            "lemmas": [
+              "entity"
+            ],
+            "synset_id": "00001740-n"
+          }
+        ]
+      ],
+      "lemmas": [
+        "horse",
+        "Equus caballus"
+      ],
+      "released_label": "horse",
+      "sense_key": "horse%1:05:00::",
+      "sense_selection_rationale": "domesticated equine mammal",
+      "synset_id": "02374451-n",
+      "wordnet_version": "Princeton WordNet 3.0"
+    },
+    {
+      "ambiguity_note": "The released flat class name is broader than some images; the frozen first concrete noun sense is used without consulting the confusion matrix.",
+      "class_id": 8,
+      "gloss": "a vessel that carries passengers or freight  ",
+      "hypernym_paths": [
+        [
+          {
+            "lemmas": [
+              "ship"
+            ],
+            "synset_id": "04194289-n"
+          },
+          {
+            "lemmas": [
+              "vessel",
+              "watercraft"
+            ],
+            "synset_id": "04530566-n"
+          },
+          {
+            "lemmas": [
+              "craft"
+            ],
+            "synset_id": "03125870-n"
+          },
+          {
+            "lemmas": [
+              "vehicle"
+            ],
+            "synset_id": "04524313-n"
+          },
+          {
+            "lemmas": [
+              "conveyance",
+              "transport"
+            ],
+            "synset_id": "03100490-n"
+          },
+          {
+            "lemmas": [
+              "instrumentality",
+              "instrumentation"
+            ],
+            "synset_id": "03575240-n"
+          },
+          {
+            "lemmas": [
+              "artifact",
+              "artefact"
+            ],
+            "synset_id": "00021939-n"
+          },
+          {
+            "lemmas": [
+              "whole",
+              "unit"
+            ],
+            "synset_id": "00003553-n"
+          },
+          {
+            "lemmas": [
+              "object",
+              "physical object"
+            ],
+            "synset_id": "00002684-n"
+          },
+          {
+            "lemmas": [
+              "physical entity"
+            ],
+            "synset_id": "00001930-n"
+          },
+          {
+            "lemmas": [
+              "entity"
+            ],
+            "synset_id": "00001740-n"
+          }
+        ]
+      ],
+      "lemmas": [
+        "ship"
+      ],
+      "released_label": "ship",
+      "sense_key": "ship%1:06:00::",
+      "sense_selection_rationale": "vessel carrying passengers or freight",
+      "synset_id": "04194289-n",
+      "wordnet_version": "Princeton WordNet 3.0"
+    },
+    {
+      "ambiguity_note": "The released flat class name is broader than some images; the frozen first concrete noun sense is used without consulting the confusion matrix.",
+      "class_id": 9,
+      "gloss": "an automotive vehicle suitable for hauling  ",
+      "hypernym_paths": [
+        [
+          {
+            "lemmas": [
+              "truck",
+              "motortruck"
+            ],
+            "synset_id": "04490091-n"
+          },
+          {
+            "lemmas": [
+              "motor vehicle",
+              "automotive vehicle"
+            ],
+            "synset_id": "03791235-n"
+          },
+          {
+            "lemmas": [
+              "self-propelled vehicle"
+            ],
+            "synset_id": "04170037-n"
+          },
+          {
+            "lemmas": [
+              "wheeled vehicle"
+            ],
+            "synset_id": "04576211-n"
+          },
+          {
+            "lemmas": [
+              "container"
+            ],
+            "synset_id": "03094503-n"
+          },
+          {
+            "lemmas": [
+              "instrumentality",
+              "instrumentation"
+            ],
+            "synset_id": "03575240-n"
+          },
+          {
+            "lemmas": [
+              "artifact",
+              "artefact"
+            ],
+            "synset_id": "00021939-n"
+          },
+          {
+            "lemmas": [
+              "whole",
+              "unit"
+            ],
+            "synset_id": "00003553-n"
+          },
+          {
+            "lemmas": [
+              "object",
+              "physical object"
+            ],
+            "synset_id": "00002684-n"
+          },
+          {
+            "lemmas": [
+              "physical entity"
+            ],
+            "synset_id": "00001930-n"
+          },
+          {
+            "lemmas": [
+              "entity"
+            ],
+            "synset_id": "00001740-n"
+          }
+        ],
+        [
+          {
+            "lemmas": [
+              "truck",
+              "motortruck"
+            ],
+            "synset_id": "04490091-n"
+          },
+          {
+            "lemmas": [
+              "motor vehicle",
+              "automotive vehicle"
+            ],
+            "synset_id": "03791235-n"
+          },
+          {
+            "lemmas": [
+              "self-propelled vehicle"
+            ],
+            "synset_id": "04170037-n"
+          },
+          {
+            "lemmas": [
+              "wheeled vehicle"
+            ],
+            "synset_id": "04576211-n"
+          },
+          {
+            "lemmas": [
+              "vehicle"
+            ],
+            "synset_id": "04524313-n"
+          },
+          {
+            "lemmas": [
+              "conveyance",
+              "transport"
+            ],
+            "synset_id": "03100490-n"
+          },
+          {
+            "lemmas": [
+              "instrumentality",
+              "instrumentation"
+            ],
+            "synset_id": "03575240-n"
+          },
+          {
+            "lemmas": [
+              "artifact",
+              "artefact"
+            ],
+            "synset_id": "00021939-n"
+          },
+          {
+            "lemmas": [
+              "whole",
+              "unit"
+            ],
+            "synset_id": "00003553-n"
+          },
+          {
+            "lemmas": [
+              "object",
+              "physical object"
+            ],
+            "synset_id": "00002684-n"
+          },
+          {
+            "lemmas": [
+              "physical entity"
+            ],
+            "synset_id": "00001930-n"
+          },
+          {
+            "lemmas": [
+              "entity"
+            ],
+            "synset_id": "00001740-n"
+          }
+        ]
+      ],
+      "lemmas": [
+        "truck",
+        "motortruck"
+      ],
+      "released_label": "truck",
+      "sense_key": "truck%1:06:00::",
+      "sense_selection_rationale": "automotive hauling vehicle",
+      "synset_id": "04490091-n",
+      "wordnet_version": "Princeton WordNet 3.0"
+    }
+  ],
+  "d_max": 15,
+  "dataset": "CIFAR-10",
+  "distance_rule": "Unweighted shortest-path length in the undirected graph induced by Princeton WordNet 3.0 noun hypernym and instance-hypernym edges.",
+  "integer_distance_matrix": [
+    [
+      0,
+      7,
+      14,
+      14,
+      15,
+      13,
+      15,
+      14,
+      5,
+      6
+    ],
+    [
+      7,
+      0,
+      13,
+      13,
+      14,
+      12,
+      14,
+      13,
+      6,
+      2
+    ],
+    [
+      14,
+      13,
+      0,
+      6,
+      7,
+      5,
+      3,
+      6,
+      13,
+      13
+    ],
+    [
+      14,
+      13,
+      6,
+      0,
+      7,
+      3,
+      7,
+      6,
+      13,
+      13
+    ],
+    [
+      15,
+      14,
+      7,
+      7,
+      0,
+      5,
+      8,
+      6,
+      14,
+      14
+    ],
+    [
+      13,
+      12,
+      5,
+      3,
+      5,
+      0,
+      6,
+      5,
+      12,
+      12
+    ],
+    [
+      15,
+      14,
+      3,
+      7,
+      8,
+      6,
+      0,
+      7,
+      14,
+      14
+    ],
+    [
+      14,
+      13,
+      6,
+      6,
+      6,
+      5,
+      7,
+      0,
+      13,
+      13
+    ],
+    [
+      5,
+      6,
+      13,
+      13,
+      14,
+      12,
+      14,
+      13,
+      0,
+      5
+    ],
+    [
+      6,
+      2,
+      13,
+      13,
+      14,
+      12,
+      14,
+      13,
+      5,
+      0
+    ]
+  ],
+  "integer_distance_matrix_sha256": "ad91f97623bb4aa02b6ec62eb4ea82660c34376152a07c624432dc81f8b7750a",
+  "neighborhood_rule": "self plus the two nearest distinct labels, including every label tied at the second-neighbor WordNet-distance cutoff",
+  "neighborhoods": [
+    [
+      0,
+      8,
+      9
+    ],
+    [
+      1,
+      8,
+      9
+    ],
+    [
+      2,
+      5,
+      6
+    ],
+    [
+      2,
+      3,
+      5,
+      7
+    ],
+    [
+      4,
+      5,
+      7
+    ],
+    [
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    [
+      2,
+      5,
+      6
+    ],
+    [
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    [
+      0,
+      8,
+      9
+    ],
+    [
+      1,
+      8,
+      9
+    ]
+  ],
+  "normalized_distance_rule": "integer_distance / d_max",
+  "schema_version": "cifar10-wordnet-3.0-v1",
+  "sense_selection_rule": "Frozen first concrete noun sense matching each released CIFAR-10 label; selected without inspecting audit outcomes.",
+  "source": {
+    "archive_sha256": "640db279c949a88f61f851dd54ebbb22d003f8b90b85267042ef85a3781d3a52",
+    "archive_url": "https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz",
+    "data_noun_sha256": "489f145e0f68877c0be5bd0eb4117adaaac52f38f6204eb8d85dbe2158b614cc",
+    "index_sense_sha256": "68b3a468cddfd8e92134b9b0624339a02a1b837159243c297c5f138a3d618392"
+  },
+  "taxonomy": "Princeton WordNet 3.0"
+}

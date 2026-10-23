@@ -1,0 +1,6 @@
+dataset,method,selection,guarantee,paths,reached,mean_reviews,median_reviews,q10_reviews,q90_reviews
+cifar10n,PAS,priority-aware,"finite-sample, anytime",20,20,781.6,768.0,633.8,880.8000000000001
+cifar10n,SRS,random records,"finite-sample, anytime",20,20,870.35,862.0,772.0,986.6
+cifar10n,Ramdas PPR,random records,"finite-sample, anytime",20,20,3979.65,3972.5,3578.3,4327.2
+cifar10n,Wald,random records,"asymptotic, fixed-n; oracle variance",1,1,1434.0,1434.0,1434.0,1434.0
+cifar10n,Serfling,random records,"finite-sample, fixed-n",1,1,4332.0,4332.0,4332.0,4332.0

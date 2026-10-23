@@ -1,0 +1,35 @@
+{
+  "action_rows": 400000,
+  "all_checkpoint_intervals_nested": true,
+  "checkpoint_rows": 1640,
+  "maximum_probability_sum_error": 4.440892098500626e-16,
+  "maximum_srs_selected_probability_error": 9.71445146547012e-17,
+  "method": "finite-envelope direct betting confidence sequence",
+  "minimum_pas_floor_margin": -1.1102230246251565e-16,
+  "paths_missing_truth_at_any_checkpoint": 0,
+  "paths_with_empty_grid_event": 0,
+  "policies": [
+    "srs",
+    "pas"
+  ],
+  "scores": [
+    "worst3_precision",
+    "worst3_taxonomic_risk"
+  ],
+  "seeds": [
+    2026100300,
+    2026100301,
+    2026100302,
+    2026100303,
+    2026100304,
+    2026100305,
+    2026100306,
+    2026100307,
+    2026100308,
+    2026100309
+  ],
+  "shared_within_row_prefixes": 169677,
+  "status": "pass",
+  "tasks": 40,
+  "within_row_record_conflicts": 0
+}

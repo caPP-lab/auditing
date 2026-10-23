@@ -1,0 +1,15 @@
+{
+  "action_rows": 200000,
+  "all_intervals_nested": true,
+  "checkpoint_rows": 8000,
+  "maximum_probability_sum_error": 0.0,
+  "maximum_srs_record_probability_error": 1.6653345369377348e-16,
+  "paths_ever_missing_truth_at_checkpoint": 0,
+  "records": 33403,
+  "rows": 46,
+  "serfling_reviews_at_two_points": 4154,
+  "shared_within_row_prefixes": 61952,
+  "status": "pass",
+  "tasks": 40,
+  "within_row_record_conflicts": 0
+}
