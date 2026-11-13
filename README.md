@@ -16,6 +16,14 @@ pip install -e .
 
 ## Reproduce the public experiments
 
+### Data
+
+- `data/cifar/`: the CIFAR-10N input used in the experiments.
+- [`data/cleanconll/`](data/cleanconll/README.md): the exact, ordered labels-only CleanCoNLL audit population (301,353 tokens), with provenance and score definitions. No corpus text is included.
+- [`data/reimagenet/`](data/reimagenet/README.md): pinned download instructions and a preprocessor for the exact ReImageNet audit population (30,908 images), including the fixed class list for F1. ReImageNet annotations must be obtained separately from their authors.
+
+These additions provide the frozen inputs and preprocessing definitions. The existing experiment scripts below are unchanged; runners for the ReImageNet and CleanCoNLL experiments are not yet included in this repository.
+
 ```bash
 python scripts/run_cifar_mislabel_study.py all --workers 4
 python scripts/compute_mislabel_comparison_baselines.py

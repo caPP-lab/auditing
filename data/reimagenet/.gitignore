@@ -1,0 +1,3 @@
+# Author annotations and derived per-record labels are obtained/generated locally.
+reannotation.jsonl
+*.npz
