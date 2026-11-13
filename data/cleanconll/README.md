@@ -47,11 +47,21 @@ with np.load('data/cleanconll/paired_labels.npz', allow_pickle=False) as data:
     f1 = 2 * np.sum((y == v) & a) / (a.sum() + b.sum())
 ```
 
-F1 is **exact BIO-tag, non-O token micro-F1**, not entity-span F1. `B-PER` and
-`I-PER`, for example, are distinct classes. Excluding `O` from the score does not
-remove its tokens from the population: O-to-entity and entity-to-O disagreements
-affect the denominator. Expected F1 is **0.9362349270513437**. Submitted and
-verified non-O counts are 50,711 and 51,210.
+We report **token-level named-entity recognition (NER) micro-F1** over the eight
+entity BIO tags. The `O` tag means "outside a named entity" and therefore is not
+an entity class. This target measures how accurately entity-bearing tokens are
+labeled, without rewarding the many correctly labeled background tokens.
+Including all tags in single-label micro-F1 would instead reduce the score to
+overall token accuracy, duplicating the information in the mislabel rate.
+
+All `O` tokens remain in the audit population. An entity label assigned to a
+verified `O` token counts as a false positive; a submitted `O` label on a verified
+entity token counts as a false negative. Thus, the score captures both spurious
+and missed entity labels. Matching requires the exact BIO tag: `B-PER` and
+`I-PER`, for example, are distinct classes. This is a **token-level** metric,
+not the entity-span F1 used for evaluating complete extracted mentions.
+Expected F1 is **0.9362349270513437**. Submitted and verified entity-token counts
+are 50,711 and 51,210.
 
 | Array | Meaning |
 | --- | --- |
