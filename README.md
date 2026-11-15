@@ -1,8 +1,8 @@
 # Supplementary code
 
-This repository contains the experiment and figure-generation code for the paper. It includes the CIFAR-10N input used in the experiments, the synthetic experiment, anonymized aggregate results for the Kenyan biodiversity experiments.
+This repository contains the experiment and figure-generation code for the paper. It includes public audit inputs, data-preparation instructions, the synthetic experiment, and species-named aggregate counts for the Kenyan biodiversity experiments.
 
-The record-level Kenyan biodiversity data are confidential and are not distributed. The corresponding scripts are included for methodological inspection, and the aggregate values used in the paper are under `results/figure_data`.
+The record-level Kenyan biodiversity data remain confidential. The preprocessed confusion matrix is available in `data/kenya`, with a matching copy and the other aggregate values used in the paper under `results/figure_data`.
 
 ## Setup
 
@@ -18,6 +18,7 @@ pip install -e .
 
 ### Data
 
+- [`data/kenya/confusion_matrix.csv`](data/kenya/confusion_matrix.csv): the preprocessed Kenya biodiversity confusion matrix with species/category names (33,403 records); see [provenance and preprocessing](#kenyan-biodiversity-data) below.
 - `data/cifar/`: the CIFAR-10N input used in the experiments.
 - [`data/cleanconll/`](data/cleanconll/README.md): the exact, ordered labels-only CleanCoNLL audit population (301,353 tokens), with provenance and score definitions. No corpus text is included.
 - [`data/reimagenet/`](data/reimagenet/README.md): pinned download instructions and a preprocessor for the exact ReImageNet audit population (30,908 images), including the fixed class list for F1. ReImageNet annotations must be obtained separately from their authors.
@@ -40,6 +41,14 @@ python scripts/report_synthetic_linear_pas_figures.py
 ```
 
 The reporting scripts write regenerated figures to `figures/`. Saved experiment outputs are under `results/`.
+
+### Kenyan biodiversity data
+
+The data come from camera-trap biodiversity monitoring in Kenya, supplied by a conservation NGO, and pair submitted identifications with expert-reviewed labels. Preprocessing uses an explicit keyword-based mapping to merge spelling, capitalization, and subtype variants into shared categories (for example, zebra variants to `Zebra` and gazelle variants to `Gazelle`). All 33,403 records are retained across 50 categories, including `Blank`, `Human`, and `Vehicle`.
+
+In [`data/kenya/confusion_matrix.csv`](data/kenya/confusion_matrix.csv), rows are submitted labels, columns are expert-reviewed labels, and cells contain integer record counts. Both axes use the same category order; 46 rows are nonempty. The matrix has 6,002 off-diagonal records (17.97% label disagreement) and exactly preserves the preprocessed experiment counts. The existing [`results/figure_data/kenya_compact_confusion_matrix.csv`](results/figure_data/kenya_compact_confusion_matrix.csv) now contains the same named matrix.
+
+The release contains aggregate counts, without images, locations, original record order, or camera-station assignments. The matrix therefore does not reproduce the exact seeded record sequences or station-stratified experiments on its own.
 
 ## Bayesian experiment
 
