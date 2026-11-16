@@ -1,0 +1,22 @@
+% Requires booktabs and graphicx.
+\providecommand{\auditresult}[3]{\shortstack[r]{#1\\[-2pt]{\scriptsize[#2, #3]}}}
+\begin{table}[t]
+\centering\small
+\caption{Kenya mislabel-rate sensitivity over 100 paired paths. Entries are median [25th, 75th percentiles] audits to 2 percentage points. Savings compare PAS and SRS medians. Reached and whole-path coverage are path counts for PAS/SRS through audit 5,000.}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\textbf{Predictor} & \textbf{PAS} & \textbf{SRS} & \textbf{PAS savings} & \textbf{Reached} & \textbf{\shortstack{Whole-path\\coverage}}\\
+\midrule
+Default & \auditresult{603}{555}{636} & \auditresult{813.5}{717.5}{866.2} & 25.9\% & 100/100 & 94/98\\[3pt]
+Underconfident (logit x 0.5) & \auditresult{628.5}{586.8}{666} & \auditresult{852}{743.2}{909.2} & 26.2\% & 100/100 & 93/94\\[3pt]
+Overconfident (logit x 2) & \auditresult{787}{715.2}{891} & \auditresult{854}{753}{914} & 7.8\% & 100/100 & 96/96\\[3pt]
+Overconfident (logit x 4) & \auditresult{1,260}{1,076.5}{1,467} & \auditresult{883}{805.8}{972.8} & -42.7\% & 100/100 & 96/97\\[3pt]
+Constant across strata (p = 0.5) & \auditresult{2,449.5}{1,981.2}{2,879.5} & \auditresult{2,449.5}{1,981.2}{2,879.5} & 0.0\% & 100/100 & 91/91\\[3pt]
+Ranking reversed: first 25 audits & \auditresult{854.5}{718.8}{911.5} & \auditresult{846}{774.2}{908.5} & -1.0\% & 100/100 & 94/97\\[3pt]
+Ranking reversed: first 50 audits & \auditresult{950}{851}{1,038.5} & \auditresult{870.5}{807}{926.2} & -9.1\% & 100/100 & 96/95\\[3pt]
+Ranking reversed: first 100 audits & \auditresult{1,085}{1,016.2}{1,169} & \auditresult{924}{870.8}{986.8} & -17.4\% & 100/100 & 95/93\\[3pt]
+Ranking reversed throughout & \auditresult{4,441}{3,690.8}{$>5{,}000$} & \auditresult{1,775}{1,578.5}{2,012} & -150.2\% & 65/100 & 99/98\\[3pt]
+\bottomrule
+\end{tabular}}
+\end{table}

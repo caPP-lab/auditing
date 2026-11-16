@@ -72,5 +72,5 @@ The ordered two-column `(submitted, verified)` array, serialized as little-endia
 64-bit integers in row-major order, has SHA-256
 `b31cfdf49f8bbbd361fe7742d3acb243a06a68659e6ed1721b460ae8857a4ced`.
 This array checksum is independent of ZIP/container metadata in the NPZ file.
-Record order matters for seed-level replay. The preprocessor reproduces inputs;
-it does not run an auditing policy. Experiment runners will be added separately.
+Record order matters for seed-level replay. The root experiment runner loads
+the preprocessed arrays directly.

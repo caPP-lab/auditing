@@ -1,0 +1,15 @@
+% Requires booktabs and graphicx.
+\providecommand{\auditresult}[3]{\shortstack[r]{#1\\[-2pt]{\scriptsize[#2, #3]}}}
+\begin{table}[t]
+\centering\small
+\caption{Kenya Hill--Shannon diversity: audits to 5\% relative accuracy at 95.5\% nominal credibility over 100 paths. Brackets give the 25th and 75th percentiles. Whole-path coverage is evaluated through stopping.}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Sampling strategy} & \textbf{Mean} & \textbf{Median} & \textbf{Coverage at stopping} & \textbf{Whole-path coverage}\\
+\midrule
+Bayesian + PAS & 247 & \auditresult{250}{225}{250} & 96/100 & 71/100\\[3pt]
+Bayesian + SRS & 494 & \auditresult{500}{450}{550} & 96/100 & 53/100\\[3pt]
+\bottomrule
+\end{tabular}}
+\end{table}

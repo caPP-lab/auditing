@@ -72,7 +72,7 @@ are 50,711 and 51,210.
 | `sentence` | Zero-based corrected sentence index; resets within each split |
 
 Load the arrays directly without sorting or shuffling to preserve seed-level
-record ordering. This is an input release; experiment runners will be added separately.
+record ordering. The root experiment runner loads these arrays directly.
 
 File SHA-256:
 `6fb7bfb5d3b74de9b60db5ff066a8acdb568697d9fcbeed103f0ffb23d6e1bf7`.

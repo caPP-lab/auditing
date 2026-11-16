@@ -1,0 +1,272 @@
+{
+  "alpha": 0.045,
+  "linear": {
+    "config": {
+      "alpha": 0.045,
+      "submitted_label_probability": 0.5,
+      "row_shrinkage": 2.0,
+      "stratum_shrinkage": 1.0,
+      "srs_floor": 0.3,
+      "stake_effective_n": 800.0,
+      "cap_fraction": 0.9,
+      "grid_step": 0.0005
+    },
+    "seeds": [
+      2026110900,
+      2026110999
+    ],
+    "budget": 5000,
+    "target_half_width": 0.02,
+    "first_target_check": 100,
+    "report_period": 1
+  },
+  "nonlinear": {
+    "seeds": {
+      "kenya": [
+        95001,
+        95100
+      ],
+      "cifar10n": [
+        2026100300,
+        2026100399
+      ],
+      "reimagenet": [
+        96201,
+        96300
+      ],
+      "cleanconll": [
+        96201,
+        96300
+      ]
+    },
+    "report_period": 25,
+    "budget": 10000,
+    "kenya_atlas_uncertainty_budget": 3000,
+    "entropy": {
+      "alpha_lower": 0.0225,
+      "alpha_upper": 0.0225,
+      "reference_smoothing": 0.01,
+      "row_shrinkage": 2.0,
+      "stratum_shrinkage": 1.0,
+      "submitted_label_prior": 0.8,
+      "proportional_weight": 0.4,
+      "range_weight": 0.3,
+      "neyman_weight": 0.3,
+      "cap_fraction": 0.9,
+      "entropy_resolution": 0.0003,
+      "profile_max_iterations": 60,
+      "endpoint_period": 25,
+      "upper_starts": [
+        200,
+        750,
+        2250,
+        5250,
+        11250,
+        23250
+      ],
+      "upper_restart_weights": [
+        0.5,
+        0.25,
+        0.125,
+        0.0625,
+        0.03125,
+        0.03125
+      ],
+      "bet_scales": [
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1.0,
+        3.0,
+        10.0
+      ],
+      "lower_bet_scales": [
+        0.03,
+        0.1,
+        0.3,
+        1.0
+      ]
+    },
+    "cifar_tail": {
+      "alpha": 0.045,
+      "submitted_label_probability": 0.8,
+      "row_shrinkage": 2.0,
+      "stratum_shrinkage": 1.0,
+      "stake_effective_n": 800.0,
+      "cap_fraction": 0.9,
+      "grid_step": 0.001,
+      "tail_size": 3,
+      "proportional_weight": 0.7,
+      "range_weight": 0.15,
+      "neyman_weight": 0.15,
+      "active_endpoint_weight": 0.5,
+      "profile_temperature": 1.0
+    },
+    "f1": {
+      "config": {
+        "alpha": 0.045,
+        "submitted_label_probability": 0.8,
+        "row_shrinkage": 2.0,
+        "stratum_shrinkage": 1.0,
+        "srs_floor": 0.3,
+        "stake_effective_n": 800.0,
+        "cap_fraction": 0.9,
+        "grid_step": 0.0005
+      }
+    },
+    "mr": {
+      "alpha": 0.045,
+      "epoch_base": 2,
+      "outward_pad": 1e-12
+    },
+    "targets": {
+      "kenya_entropy_relative": 0.05,
+      "cifar_worst3_precision_relative": 0.05,
+      "cifar_worst3_taxonomic_risk_relative": 0.25,
+      "f1_absolute": 0.02
+    }
+  },
+  "bayesian": {
+    "seeds": [
+      8000,
+      8099
+    ],
+    "beta": 0.5,
+    "kappa_row": 2.0,
+    "kappa_stratum": 0.5,
+    "posterior_draws": 400,
+    "first_evaluation": 100,
+    "report_period": 25,
+    "budget": 1000,
+    "quantile_percent": [
+      2.25,
+      97.75
+    ],
+    "entropy_width_target": 0.10008345855698263,
+    "proportional_weight": 0.2,
+    "neyman_weight": 0.8
+  },
+  "synthetic": {
+    "config": {
+      "alpha": 0.045,
+      "prior_strength": 2.0,
+      "stake_effective_n": 800.0,
+      "cap_fraction": 0.9,
+      "grid_step": 0.0005
+    },
+    "rows": 20,
+    "variable_rows": 4,
+    "records_per_row": 250,
+    "seeds": [
+      2026101000,
+      2026101099
+    ],
+    "scaling_rows": [
+      8,
+      12,
+      20,
+      32,
+      48
+    ],
+    "scaling_seeds": [
+      2026092400,
+      2026092404
+    ],
+    "budget": 800,
+    "report_period": 25
+  },
+  "sensitivity": {
+    "epsilon": [
+      0.05,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "initialization_percent": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "misspecification": [
+      {
+        "name": "default",
+        "label": "Default",
+        "kind": "identity",
+        "logit_multiplier": 1.0,
+        "reverse_until": null
+      },
+      {
+        "name": "underconfident_05",
+        "label": "Underconfident (logit x 0.5)",
+        "kind": "temperature",
+        "logit_multiplier": 0.5,
+        "reverse_until": null
+      },
+      {
+        "name": "overconfident_2",
+        "label": "Overconfident (logit x 2)",
+        "kind": "temperature",
+        "logit_multiplier": 2.0,
+        "reverse_until": null
+      },
+      {
+        "name": "overconfident_4",
+        "label": "Overconfident (logit x 4)",
+        "kind": "temperature",
+        "logit_multiplier": 4.0,
+        "reverse_until": null
+      },
+      {
+        "name": "constant_05",
+        "label": "Constant across strata (p = 0.5)",
+        "kind": "constant",
+        "logit_multiplier": 1.0,
+        "reverse_until": null
+      },
+      {
+        "name": "reverse_25",
+        "label": "Ranking reversed: first 25 audits",
+        "kind": "reverse",
+        "logit_multiplier": 1.0,
+        "reverse_until": 25
+      },
+      {
+        "name": "reverse_50",
+        "label": "Ranking reversed: first 50 audits",
+        "kind": "reverse",
+        "logit_multiplier": 1.0,
+        "reverse_until": 50
+      },
+      {
+        "name": "reverse_100",
+        "label": "Ranking reversed: first 100 audits",
+        "kind": "reverse",
+        "logit_multiplier": 1.0,
+        "reverse_until": 100
+      },
+      {
+        "name": "reverse_all",
+        "label": "Ranking reversed throughout",
+        "kind": "reverse",
+        "logit_multiplier": 1.0,
+        "reverse_until": null
+      }
+    ]
+  }
+}

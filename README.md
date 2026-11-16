@@ -1,56 +1,98 @@
-# Supplementary code
+# ATLAS: categorical-label auditing
 
-This repository contains the experiment and figure-generation code for the paper. It includes public audit inputs, data-preparation instructions, the synthetic experiment, and species-named aggregate counts for the Kenyan biodiversity experiments.
-
-The record-level Kenyan biodiversity data remain confidential. The preprocessed confusion matrix is available in `data/kenya`, with a matching copy and the other aggregate values used in the paper under `results/figure_data`.
+Code, data, results, and experimental figures for the camera-ready paper. The
+release contains the reported experiments with their frozen settings and seeds.
 
 ## Setup
 
-Python 3.11 or newer is required.
+Python 3.12 or newer:
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install -e .
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests
 ```
 
-## Reproduce the public experiments
+Kenya, CIFAR-10N, and CleanCoNLL inputs are included. Before rerunning ReImageNet,
+follow [its pinned download and preprocessing instructions](data/reimagenet/README.md).
+Downloading images is unnecessary. The saved results can be summarized and plotted
+without downloading ReImageNet.
 
-### Data
+## Reproduce tables and figures
 
-- [`data/kenya/confusion_matrix.csv`](data/kenya/confusion_matrix.csv): the preprocessed Kenya biodiversity confusion matrix with species/category names (33,403 records); see [provenance and preprocessing](#kenyan-biodiversity-data) below.
-- `data/cifar/`: the CIFAR-10N input used in the experiments.
-- [`data/cleanconll/`](data/cleanconll/README.md): the exact, ordered labels-only CleanCoNLL audit population (301,353 tokens), with provenance and score definitions. No corpus text is included.
-- [`data/reimagenet/`](data/reimagenet/README.md): pinned download instructions and a preprocessor for the exact ReImageNet audit population (30,908 images), including the fixed class list for F1. ReImageNet annotations must be obtained separately from their authors.
-
-These additions provide the frozen inputs and preprocessing definitions. The existing experiment scripts below are unchanged; runners for the ReImageNet and CleanCoNLL experiments are not yet included in this repository.
+From the release root:
 
 ```bash
-python scripts/run_cifar_mislabel_study.py all --workers 4
-python scripts/compute_mislabel_comparison_baselines.py
-python scripts/report_cifar_mislabel_figure.py
-
-python scripts/run_cifar_tail_betting_study.py all --workers 4 \
-  --output results/cifar_worst_three \
-  --seeds 2026100300,2026100301,2026100302,2026100303,2026100304,2026100305,2026100306,2026100307,2026100308,2026100309 \
-  --pas-variant robust70
-python scripts/report_cifar_tail_betting_figure.py
-
-python scripts/run_synthetic_linear_pas_study.py all --workers 4
-python scripts/report_synthetic_linear_pas_figures.py
+python report_results.py
+python make_figures.py
 ```
 
-The reporting scripts write regenerated figures to `figures/`. Saved experiment outputs are under `results/`.
+These commands regenerate `results/*summary.csv`, `results/tables/*.tex`, and
+`figures/*.pdf` from the included per-path results. LaTeX tables require
+`booktabs` and `graphicx`.
 
-### Kenyan biodiversity data
+## Rerun experiments
 
-The data come from camera-trap biodiversity monitoring in Kenya, supplied by a conservation NGO, and pair submitted identifications with expert-reviewed labels. Preprocessing uses an explicit keyword-based mapping to merge spelling, capitalization, and subtype variants into shared categories (for example, zebra variants to `Zebra` and gazelle variants to `Gazelle`). All 33,403 records are retained across 50 categories, including `Blank`, `Human`, and `Vehicle`.
+```bash
+# One frozen seed across the seven plotted Kenya mislabel methods:
+python run_experiments.py --study mislabel --datasets kenya --seed-index 0
 
-In [`data/kenya/confusion_matrix.csv`](data/kenya/confusion_matrix.csv), rows are submitted labels, columns are expert-reviewed labels, and cells contain integer record counts. Both axes use the same category order; 46 rows are nonempty. The matrix has 6,002 off-diagonal records (17.97% label disagreement) and exactly preserves the preprocessed experiment counts. The existing [`results/figure_data/kenya_compact_confusion_matrix.csv`](results/figure_data/kenya_compact_confusion_matrix.csv) now contains the same named matrix.
+# All reported experiments and seeds:
+python run_experiments.py --study all --workers 4
+python report_results.py --runs runs --output reproduced
+python make_figures.py --results reproduced --output reproduced/figures
+```
 
-The release contains aggregate counts, without images, locations, original record order, or camera-station assignments. The matrix therefore does not reproduce the exact seeded record sequences or station-stratified experiments on its own.
+The runner saves each completed path separately and skips existing completed
+files when restarted. `--study` also accepts `nonlinear`, `bayesian`, `synthetic`,
+`epsilon`, `initialization`, and `misspecification`. `--datasets` selects among
+`kenya`, `cifar10n`, `reimagenet`, and `cleanconll`. The complete-run collector
+expects every frozen path. `--seed-index` is for individual-path reproduction.
 
-## Bayesian experiment
+| Study | Paths per policy/setting | Audit budget | Reported updates |
+| --- | ---: | ---: | --- |
+| Mislabel rate, four datasets | 100 | 5,000 | Every audit; target checks from 100 |
+| Kenya Hill–Shannon diversity, ATLAS and uncertainty-only | 100 | 3,000 | Every 25 audits |
+| Other nonlinear runs, including Kenya PPR/MR | 100 | 10,000 | Every 25 audits |
+| Kenya Bayesian diversity | 100 | 1,000 | From 100, every 25; stop at target |
+| Synthetic, 20 rows | 100 | 800 | Every 25 audits |
+| Synthetic scaling, 8/12/20/32/48 rows | 5 | 800 | Every 25 audits |
+| Exploration weight and predictor misspecification | 100 | 5,000 | Every audit |
+| Kenya initialization, linear/nonlinear | 100 | 5,000 / 3,000 | Every audit / every 25 |
 
-The Bayesian implementation is `scripts/run_bayesian_diversity_study.py`. It requires the confidential record-level Kenya CSV and therefore cannot be rerun from the public supplement alone. The per-path output is preserved at `results/kenya_bayesian/results.jsonl`.
+Settings are in `settings.json`; executable definitions and seeds are in
+`atlas_auditing/experiments.py`. Seed pairs in the settings file give inclusive
+first and last seed values. No configuration search is performed by the runner.
+Chebyshev sample counts are computed analytically.
 
+## Contents
+
+- `data/`: ordered label inputs, taxonomy distances, and preprocessing documentation.
+- `atlas_auditing/`: inference, sampling, numerical bounds, and reporting code.
+- `results/`: current per-path outputs and derived summaries; [file definitions](results/README.md).
+- `figures/`: only experimental figures used in the main text and appendix;
+  [paper-to-file mapping](figures/README.md).
+- `tests/`: data, reporting, and numerical replay checks.
+- `SHA256SUMS`: checksums of release files.
+
+Mislabel and nonlinear curves plot median first-attainment times as a function
+of precision. Their target intersections and table entries use the same stopping
+times. Bands give the horizontal 25th–75th percentile attainment-time range.
+Unreached targets remain right-censored; all paths enter the summaries. Nonlinear
+stopping times use observed checkpoints, with no interpolation within a path.
+The synthetic figure reports interval widths and paired terminal-width reductions.
+
+## Baseline sources
+
+The linear comparisons implement the two reported risk-limiting financial
+auditing variants of Shekhar et al. (2023), the finite-population
+prior–posterior-ratio confidence sequence of Waudby-Smith and Ramdas (2020),
+and the stated fixed-sample bounds. Nonlinear PPR projects simultaneous
+component intervals onto each score. MR stitching instantiates the
+reverse-submartingale framework of Manole and Ramdas (2023), with
+finite-population bounds and score-specific inversion. These adaptations and
+their sampling rules are described in the paper's appendix. Uncertainty-only
+uses the ATLAS intervals and removes downstream-score influence from allocation.
+
+Dataset provenance and upstream terms are recorded in each dataset's README.

@@ -1,0 +1,3 @@
+policy,paths,mean,median,q25,q75,coverage_at_stopping,whole_path_coverage
+pas,100,247.25,250.0,225.0,250.0,96,71
+srs,100,494.0,500.0,450.0,550.0,96,53

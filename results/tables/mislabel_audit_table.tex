@@ -1,0 +1,22 @@
+% Requires booktabs and graphicx.
+\providecommand{\auditresult}[3]{\shortstack[r]{#1\\[-2pt]{\scriptsize[#2, #3]}}}
+\begin{table}[t]
+\centering\small
+\caption{Median [25th, 75th percentiles] audits to first attain the precision target at 95.5\% nominal confidence over 100 paired paths. Counts are rounded to the nearest audit. Target: 2 percentage points; checks begin at audit 100. $>5{,}000$ denotes nonattainment within budget.}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Method} & \textbf{Kenya} & \textbf{CIFAR-10N} & \textbf{ReImageNet} & \textbf{CleanCoNLL}\\
+\midrule
+ATLAS-PAS & \auditresult{\textbf{603}}{555}{636} & \auditresult{\textbf{790}}{725}{881} & \auditresult{\textbf{1,394}}{1,161}{1,700} & \auditresult{281}{242}{334}\\[3pt]
+ATLAS-SRS & \auditresult{814}{718}{866} & \auditresult{980}{914}{1,056} & \auditresult{1,539}{1,287}{1,764} & \auditresult{293}{225}{368}\\[3pt]
+Prop-MS & \auditresult{$>5,000$}{$>5,000$}{$>5,000$} & \auditresult{$>5,000$}{4,530}{$>5,000$} & \auditresult{1,671}{1,417}{1,994} & \auditresult{1,575}{1,151}{1,966}\\[3pt]
+Prop-M + CV & \auditresult{2,016}{1,552}{2,233} & \auditresult{2,404}{2,107}{2,886} & \auditresult{2,631}{2,038}{3,495} & \auditresult{\textbf{233}}{100}{$>5,000$}\\[3pt]
+PPR & \auditresult{4,021}{3,572}{4,237} & \auditresult{4,035}{3,541}{4,310} & \auditresult{2,216}{2,021}{2,338} & \auditresult{435}{340}{529}\\[3pt]
+Wald & 1,481 & 1,434 & 748 & 119\\[3pt]
+Serfling & 4,154 & 4,332 & 4,112 & 4,670\\[3pt]
+Chebyshev & 9,811 & 10,870 & 9,583 & 13,278\\[3pt]
+\bottomrule
+\end{tabular}}
+\par\smallskip{\footnotesize Bold: smallest median among anytime-valid methods. Wald uses oracle variance; Wald, Serfling, and Chebyshev are fixed-$n$ references. Chebyshev uses variance bound $1/4$.\par}
+\end{table}

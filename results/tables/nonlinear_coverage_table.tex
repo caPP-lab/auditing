@@ -1,0 +1,18 @@
+% Requires booktabs and graphicx.
+\providecommand{\auditresult}[3]{\shortstack[r]{#1\\[-2pt]{\scriptsize[#2, #3]}}}
+\begin{table}[t]
+\centering\small
+\caption{Paths whose intervals cover the true nonlinear score at every reported update.}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\textbf{Method} & \textbf{\shortstack{Kenya\\Hill--Shannon}} & \textbf{\shortstack{CIFAR-10N\\Worst-three precision}} & \textbf{\shortstack{CIFAR-10N\\Worst-three taxonomic risk}} & \textbf{\shortstack{ReImageNet\\F1}} & \textbf{\shortstack{CleanCoNLL\\NER F1}}\\
+\midrule
+ATLAS-PAS & 100/100 & 99/100 & 100/100 & 96/100 & 95/100\\[3pt]
+ATLAS-SRS & 100/100 & 100/100 & 100/100 & 97/100 & 89/100\\[3pt]
+Uncertainty-only & 100/100 & 100/100 & 100/100 & 95/100 & 95/100\\[3pt]
+PPR + projection & 99/100 & 99/100 & 100/100 & 100/100 & 100/100\\[3pt]
+MR stitching & 100/100 & 100/100 & 100/100 & 100/100 & 100/100\\[3pt]
+\bottomrule
+\end{tabular}}
+\end{table}

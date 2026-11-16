@@ -1,0 +1,14 @@
+,tabby,tiger cat,Persian cat,Siamese cat,Egyptian cat,cougar,lynx,leopard,snow leopard,jaguar,lion,tiger,cheetah,Other
+tabby,26,9,0,0,0,0,0,0,0,0,0,0,0,0
+tiger cat,18,6,0,0,0,0,0,0,0,0,0,13,0,0
+Persian cat,1,0,29,0,0,0,0,0,0,0,0,0,0,3
+Siamese cat,2,0,0,30,0,0,0,0,0,0,0,0,0,0
+Egyptian cat,17,0,0,2,3,0,0,0,0,0,0,0,0,2
+cougar,0,0,0,0,0,40,0,0,0,0,1,0,1,0
+lynx,3,1,0,0,0,1,37,1,0,0,0,0,0,2
+leopard,0,0,0,0,0,0,0,46,0,2,0,0,1,0
+snow leopard,0,0,0,0,0,0,0,0,41,0,0,0,0,0
+jaguar,1,0,0,0,0,0,0,10,2,32,0,0,0,0
+lion,0,0,0,0,0,0,0,0,0,0,49,0,0,0
+tiger,0,0,0,0,0,0,0,1,0,0,0,47,0,0
+cheetah,0,0,0,0,0,0,0,1,0,0,0,0,49,0
