@@ -133,7 +133,7 @@ def mislabel_panel(ax, curves, dataset):
     ax.set(xlim=(0, maximum), ylim=(minimum, 5), xticks=np.arange(0, maximum + 1, 500 if maximum < 5000 else 1000), yticks=sorted(set([minimum] + list(range(1, 6)))))
     ax.set_title(f'{final.LABELS[dataset]}: mislabel rate certification', fontsize=14, pad=5)
     ax.set_xlabel('Audits', fontsize=13, labelpad=4)
-    ax.set_ylabel('Margin of error (percentage points)', fontsize=13, labelpad=3)
+    ax.set_ylabel('CS half-width (percentage points)', fontsize=13, labelpad=3)
     final.axes_style(ax)
     ax.set_xlabel('Audits', fontsize=13, labelpad=4)
     ax.tick_params(labelsize=preview.TICK_FONTSIZE, pad=3)

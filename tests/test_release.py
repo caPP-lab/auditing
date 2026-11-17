@@ -71,6 +71,21 @@ class ReleaseTests(unittest.TestCase):
             digest,name=line.split('  ',1)
             self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),digest,name)
 
+    def test_mislabel_axis_label(self):
+        from atlas_auditing.plot_panels import mislabel_panel
+        import matplotlib
+        matplotlib.use('Agg')
+        import matplotlib.pyplot as plt
+        curves=pd.read_csv(ROOT/'results/linear_curves.csv.gz')
+        for dataset in ('kenya','cifar10n','reimagenet','cleanconll'):
+            with self.subTest(dataset=dataset):
+                fig,ax=plt.subplots()
+                try:
+                    mislabel_panel(ax,curves,dataset)
+                    self.assertEqual(ax.get_ylabel(),'CS half-width (percentage points)')
+                finally:
+                    plt.close(fig)
+
 
 if __name__=='__main__':
     unittest.main()
